@@ -1,13 +1,146 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+/* BODY AND TEXT */
+body {
+	overflow-x: hidden;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+div {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+}
+
+h1 {
+	font-size: 40px;
+	display:inline;
+	color:#ECF0F1;
+}
+
+h2 {
+	font-size: 20px;
+	display:inline;
+	letter-spacing:0.5;
+}
+
+/* WRAPPER */
+#wrapper {
+	margin:0px auto;
+	padding:0px;
+	border:0px;
+	width: 90%;
+	max-width:960px;
+	position:auto;
+	color:#E74C3C;
+}
+
+
+/* FOOTER */
+#footer {
+	position:fixed;
+	bottom:-3;
+	width:inherit;
+	max-width:inherit;
+}
+
+/* HEADING */
+#heading {
+	display:inline;
+	height:80px;
+}
+
+#heading_logo {
+	box-shadow: 0 -5px 0 #E74C3C;
+	width:60%;
+	min-width: 275px;
+	float:left;
+	margin:0px;
+}
+
+.buttons {
+	/*background:#232424;*/
+	width:40%;
+	min-width: 115px;
+	float:right;
+	margin:0px;
+	height:80px;
+}
+
+#button_one {
+	display:inline;
+	text-align: center;
+	float:left;
+	width:50%;
+	height:100%;
+}
+
+#button_one:hover {
+	background-color:#E74C3C;
+	color:#ECF0F1; 
+}
+
+#button_two {
+	display:inline;
+	float:right;
+	text-align: center;
+	width:50%;
+	height:100%;
+}
+
+#button_two:hover {
+	background-color:#E74C3C;
+	color:#ECF0F1; 
+}
+
+.heading_padding {
+	padding:20px;
+	padding-left:0px;
+}
+
+.buttons_padding{
+	padding-top:35px; 
+}
+
+#background {
+	position:fixed;
+	background:#232424;
+  z-index:-1;
+  width:100%;
+  right:0px;
+  /*bottom:-2px;*/
+  height:400px;
+  box-shadow: 0 -5px 0 #E74C3C;
+}
+
+#content {
+	margin-top:100px;
+	position:fixed;
+	max-width:inherit;
+	width:inherit;
+}
+
+#photo {
+	float:left;
+	margin-left:5px;
+	width:237px;
+	height:237px;
+	background-color: #2C3E50;
+	outline: #E74C3C solid 5px;
+}
+
+#text_content {
+	float:right;
+	text-align:left;
+	width:70%;
+	max-width: inherit;
+}
+
+/* MAP */
+
+#map_canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index:-2;
+}
