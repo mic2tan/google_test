@@ -12,5 +12,9 @@ describe "User pages" do
     #user.latitude.should equal(43.0718677)
     it { should have_content('Listing users') }
     #it { should have_title(full_title('Sign up')) }
+
+    it { should have_selector("div#button_one") }
+    it { should have_selector("div#button_two") }
+    it { should have_selector("div#map") }
   end
 end
