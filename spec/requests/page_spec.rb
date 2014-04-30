@@ -9,7 +9,7 @@ describe "User pages" do
     before { visit root_path }
     
     
-    #user.latitude.should equal(43.0718677)
+    it {user.latitude.should eq(43.0718677) }
     it { should have_content('Listing users') }
     #it { should have_title(full_title('Sign up')) }
 
